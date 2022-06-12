@@ -25,6 +25,29 @@ const nestedMuppet = {
   nestedPartner: 'Miss Piggy'
 };
 
+
+//Strings - order is very crucial
+let farmAnimalsArray = farmAnimals.split(' ');
+let [moo,neigh, baa,oink,cluck] = farmAnimalsArray;
+let[bessie,,dolly,babe,little] = farmAnimalsArray;
+
+let [blackAndWhite,,black,pink] = farmAnimalsArray;
+
+
+//Arrays
+let[red,orange,yellow,green,blue,indigo,violet] = colors;
+let[r,o,y,g,b,,v] = colors
+let [,,,,,indg,] =colors;
+
+
+
+//OBJECTS
+let {muppetName,color,song,job,partner} = muppet;
+let {song2,song4}=nestedMuppet.album.theMuppetMovie; // Here no exclusion commas are necessary. The variable name is searched as it in the keys of the object
+let{nestedJob,nestedPartner} = nestedMuppet;
+
+
+
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
